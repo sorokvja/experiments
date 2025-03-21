@@ -1,0 +1,62 @@
+1. Expand the Employee Class:
+
+Add a method called get_annual_salary that calculates and returns the yearly salary of an employee.
+Add a method promote that increases the employee's salary by a percentage (passed as a parameter) and update their position (optional).
+
+2. Create a Related Class:
+
+Write a Department class where you assign employees to specific departments. Allow it to track how many employees are in each department.
+Use it to practice how classes can interact with each other.
+
+3. Experiment with Class and Instance Variables:
+
+Try overriding company_name for a single instance and observe the result.
+Create a method that prints company_name for both the class and all instances. Compare the differences when you override it.
+
+4. Build a Project:
+
+Write a "School System" where you have classes like Teacher, Student, and Classroom. Practice inheritance by creating a base class like Person that both Student and Teacher inherit from.
+Solve Real Problems:
+
+Try out other challenges involving classes on coding platforms like Boot.dev to get a variety of scenarios.
+
+5. Structure 
+
+For a "School System"-style project, here’s a suggested structure you could start with:
+
+school_system/
+├── main.py               # Entry point of the application
+├── schools/
+│   ├── __init__.py       # Use if making this a package (can stay blank for now)
+│   ├── person.py         # Base Person class (e.g., for shared attributes like name, age)
+│   ├── student.py        # Student class inheriting from Person
+│   ├── teacher.py        # Teacher class inheriting from Person
+│   ├── classroom.py      # Classroom class to track students/teachers
+│   └── department.py     # Department or school-related functionality
+└── tests/
+    ├── __init__.py       # Use if making this a package (optional)
+    ├── test_main.py      # Write tests for `main.py` if needed
+    ├── test_person.py    # Tests for `person.py`
+    ├── test_student.py   # Tests for `student.py`
+    ├── test_teacher.py   # Tests for `teacher.py`
+    └── test_classroom.py # Tests for `classroom.py`
+
+What Goes Where?
+main.py:
+This is the starting point for your program, where you initialize and run everything.
+Example: Create sample students, teachers, and classrooms, and demonstrate the functionality of your classes.
+
+person.py:
+Build a base class for shared attributes, like name, age, and methods like get_full_name.
+
+student.py:
+Define specific attributes (like grades or year) and methods (like a calculate_gpa method) for a student.
+
+teacher.py:
+Include attributes like subject or salary, and methods like assign_homework.
+
+classroom.py:
+Manage collections of Student and Teacher instances. Include methods like add_student or get_class_average.
+
+department.py:
+Organize classrooms into departments. Track teachers 
